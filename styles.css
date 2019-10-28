@@ -1,0 +1,24 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: 25% auto;
+	grid-gap: 1em;
+	max-width: 900px;
+	background-color: green;
+}
+
+.pics {
+	width: 100%;
+}
+
+#block {
+
+}
+
+#page {
+	
+}
