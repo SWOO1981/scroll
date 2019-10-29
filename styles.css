@@ -16,17 +16,21 @@
 }
 
 #page {
-	width: 70%;
-	margin-left: 22%;
+	width: 75%;
+	height: 100%;
+	max-width: 40em;
+	margin-left: 30%;
 }
 
 #block {
 	background: #027EBA;
     height: 100%;
-    width: 15%;
+    width: 18%;
     max-width: 14em;
     position: fixed;
     top:0;
     overflow: hidden;
 }
+
+@media screen only and 
 
