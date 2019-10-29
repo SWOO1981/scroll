@@ -3,10 +3,10 @@
 	padding: 0;
 }
 
-.gridContainer {
-	display: grid;
-	grid-template-columns: 25% auto;
-	grid-gap: 1em;
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	max-width: 900px;
 	background-color: green;
 }
@@ -15,10 +15,18 @@
 	width: 100%;
 }
 
-#block {
-
-}
-
 #page {
-	
+	width: 70%;
+	margin-left: 22%;
 }
+
+#block {
+	background: #027EBA;
+    height: 100%;
+    width: 15%;
+    max-width: 14em;
+    position: fixed;
+    top:0;
+    overflow: hidden;
+}
+

@@ -1,19 +1,6 @@
-function getClientHeight()
-{
-  return document.compatMode=='CSS1Compat' && !window.opera?document.documentElement.clientHeight:document.body.clientHeight;
-}
-
-var clientHeight = getClientHeight();
-
-$(window).scroll(function() {
-    
-    var diff = ($("#blockLength").height() - clientHeight) / ($("#page").height() - clientHeight);
-    var blocktoSet = $(window).scrollTop() * diff;
-    
-    $("#block").scrollTop(blocktoSet);
-    
-    console.log()
-    
-    
-    
-});
+    $(window).scroll(function() {
+        var pageH = $('#page').height() - $(this).height();
+        var pageT = this.scrollY - $('#page').offset().top;
+        
+        $('#block').scrollTop(pageT / pageH * ($('#blockLength').height() - $(this).height()));
+    });
